@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/add_sub"
+            android:title="Add subject" />
+        <item
+            android:id="@+id/del_sub"
+            android:title="Delete subject" />
+        <item
+            android:id="@+id/create_sub"
+            android:title="Create subject" />
+    </group>
+</menu>

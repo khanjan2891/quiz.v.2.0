@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="EditText1" type="id"></item>
+    <item name="EditText2" type="id"></item>
+    <item name="EditText3" type="id"></item>
+    <item name="EditText4" type="id"></item>
+    <item name="EditText5" type="id"></item>
+    <item name="EditText6" type="id"></item>
+    <item name="EditText7" type="id"></item>
+    <item name="EditText8" type="id"></item>
+    <item name="EditText9" type="id"></item>
+
+</resources>

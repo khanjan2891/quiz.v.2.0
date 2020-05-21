@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layoutHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_orange_light"
+
+        >
+    <TextView
+        android:id="@+id/CreateQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="100dp"
+        android:text="Create Quiz"
+        android:textSize="32dp"></TextView>
+    <Button
+        android:id="@+id/Add_element"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/CreateQuiz"
+        android:background="@drawable/edit_button"></Button>
+    </RelativeLayout>
+</RelativeLayout>

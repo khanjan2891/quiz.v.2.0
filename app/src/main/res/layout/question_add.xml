@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutadd1" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutadd"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_new">
+
+        <EditText
+            android:id="@+id/getQuestion"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Question"></EditText>
+
+
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/getQuestion"
+            android:layout_marginTop="10dp">
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/Addoptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RadioGroup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+
+            android:text="Add Options"
+            android:textColor="#000000"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Addoptions"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginRight="25dp"
+
+            android:text="OK"
+            android:textColor="#000000"
+            android:textSize="22dp"></TextView>
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Addoptions"
+            android:layout_marginRight="22dp"
+            android:layout_toLeftOf="@id/OK"
+
+            android:text="Cancel"
+            android:textColor="#000000"
+            android:textSize="22dp"
+
+            ></TextView>
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/AddtoDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#A8DDAA"
+        android:text="Done"
+        android:textColor="#00000F"
+        ></Button>
+
+
+
+    <include layout="@layout/activity_teacher__second"></include>
+    <include layout="@layout/display_question"></include>
+
+
+</RelativeLayout>

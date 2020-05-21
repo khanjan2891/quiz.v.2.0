@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/create_quiz"
+            android:title="Create Quiz" />
+        <item
+            android:id="@+id/del_quiz"
+            android:title="Delete Quiz" />
+    </group>
+</menu>

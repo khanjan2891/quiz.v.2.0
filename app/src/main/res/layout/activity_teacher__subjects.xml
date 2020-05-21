@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    tools:context=".Teacher_Subjects"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <RelativeLayout
+        android:id="@+id/subjects_name"
+        android:layout_width="374dp"
+        android:layout_height="623dp">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/subject_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF38A"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="@drawable/ic_menu"
+            app:title="Create Subjects"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:background="#FFF38A"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/ic_more" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:id="@+id/subjects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/add_subject"
+            android:layout_width="254dp"
+            android:layout_height="134dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="172dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/addsubject"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_condensed_bold"
+                android:text="Add Subject"
+                android:textAlignment="center"
+                android:textColor="#A8DDAA"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/subjectname"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/open_sans_semibold"
+                android:hint="Enter Subject name"
+                android:inputType="textShortMessage|textPersonName"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button2"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:onClick="addbutton"
+                    android:text="Add "
+                    android:textSize="7dp" />
+
+                <Button
+                    android:id="@+id/cancel1"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/custom_button2"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:onClick="cancel"
+                    android:text="Cancel"
+                    android:textSize="7sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
